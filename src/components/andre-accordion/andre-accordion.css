@@ -1,0 +1,32 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+.cont {
+  width: 100%; 
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 25px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: 0;
+}
+
+span {
+  float: right;
+}
+
+.open {
+  display: block;
+  height: auto;
+  padding: 5px;
+  text-align: left;
+  /*border: .5px solid gray;*/
+  color: rgb(245, 160, 90);
+}
+
+.close {
+  display: none;
+}

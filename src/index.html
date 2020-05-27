@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+  <!-- LINK -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <!-- SCRIPT -->
+  <script type="module" src="/build/stencil-starter-project-name.esm.js"></script>
+  <script nomodule src="/build/stencil-starter-project-name.js"></script>
+
+  <style>
+    my-tabs {
+      display: none;
+    }
+
+    my-tabs.hydrated {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <my-tabs defaultActive="2">
+    <my-tab slot="tab_1" name="Miglior attore">
+      <h2>Joaquin Phoenix</h2>
+      <p>è un attore davvero bravo bravissimo</p>
+    </my-tab>
+    <my-tab slot="tab_2" name="Miglior colonna sonora">
+      <h2>Joker</h2>
+    </my-tab>
+    <my-tab slot="tab_3" name="Miglior attore non protagonista" disabled>
+      <h2>Brad Pitt</h2>
+    </my-tab>
+  </my-tabs>
+
+  <wrapper-accordion></wrapper-accordion>
+
+  <toggle-btn></toggle-btn>
+  <inline-edit></inline-edit>
+</body>
+
+<script>
+  /*const myTabs = document.querySelector('my-tabs');
+  console.log(myTabs);
+  myTabs.addEventListener('changed', () => {
+    console.log('è cambiato');
+  });*/
+</script>
+
+</html>

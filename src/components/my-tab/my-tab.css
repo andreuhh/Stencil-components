@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+.tab-list {
+  border-bottom: 1px solid #ddd;
+  padding: 0 5px;
+}
+
+.tab-button {
+  border: 0;
+  font-size: 14px;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.tab-button:hover:not(:disabled):not(.active) {
+  border-bottom: 3px solid grey;
+}
+
+.tab-button:disabled {
+  opacity: 0.4;
+}
+
+.tab-button.active {
+  border-bottom: 3px solid blue;
+  font-weight: 600;
+}
